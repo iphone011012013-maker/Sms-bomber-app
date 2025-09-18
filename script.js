@@ -16,8 +16,7 @@ document.getElementById('smsForm').addEventListener('submit', function(event) {
     }
 
     // رابط الدالة السحابية (الخاص بمشروعك)
-    const apiUrl = 'https://sms-bomber-app-t9x1.vercel.app/api/send';
-
+    const apiUrl = '/api/send';
     // تجهيز الواجهة للبدء
     statusDiv.textContent = '⏳ جاري الإرسال... برجاء الانتظار.';
     statusDiv.style.color = '#e0e0e0';
