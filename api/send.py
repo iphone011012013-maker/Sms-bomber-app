@@ -47,7 +47,7 @@ class handler(BaseHTTPRequestHandler):
         failure = 0
 
         # تحديد عدد الرسائل بحد أقصى 100 لمنع الاستغلال
-        count = min(int(sms_count), 100)
+        count = min(int(sms_count), 1000)
 
         for _ in range(count):
             payload = json.dumps({"dial": phone_number})
