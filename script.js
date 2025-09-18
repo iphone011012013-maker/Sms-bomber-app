@@ -15,8 +15,8 @@ document.getElementById('smsForm').addEventListener('submit', function(event) {
         return;
     }
 
-    // رابط الدالة السحابية (سنحصل عليه في الخطوة التالية)
-    const apiUrl = 'https://sms-bomber-app-qbjp.vercel.app/';
+    // رابط الدالة السحابية (الخاص بمشروعك)
+    const apiUrl = 'https://sms-bomber-app-qbjp.vercel.app/api/send';
 
     // تجهيز الواجهة للبدء
     statusDiv.textContent = '⏳ جاري الإرسال... برجاء الانتظار.';
